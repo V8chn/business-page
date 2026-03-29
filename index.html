@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business card</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <section class="hero">
+        
+        <div class="hero__photo">
+            <img class="hero__img" src="my_photo.png" alt="Вадим Вечканов">
+        </div>  
+        
+        <div class="hero__content">
+            <h1 class="hero__name">Вадим Вечканов</h1>
+            <p class="hero__role">Frontend Developer</p>
+            <p class="hero__offer">Создаю быстрые и удобные сайты для бизнеса</p>
+            
+            <div class="hero__links">
+                <a href="#projects" class="button button--primary">проекты</a>
+                <a href="#contacts" class="button button--secondary">контакты</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+
+        <h2 class="services__head" data-animation="services_head">Услуги</h2>
+
+        <table class="services__table" data-animation="services_table">
+            <tbody class="services__tbody">
+            <tr class="services__row">
+                <td class="services__cell">
+                    <h3 class="services__title">Создаю быстрые и адаптивные сайты:</h3>
+                    <div class="services__wrapper">
+                        <p class="services__li">лендинги</p>
+                        <p class="services__li">визитки</p>
+                        <p class="services__li">простые веб-приложения</p>
+                    </div>
+                </td>
+                <td class="services__cell">
+                    <h3 class="services__title">Нахожу и исправляю ошибки на сайте:</h3>
+                    <div class="services__wrapper">
+                        <p class="services__li">не работает кнопка / форма</p>
+                        <p class="services__li">ломается верстка</p>
+                        <p class="services__li">ошибки в JavaScript</p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="services__row">
+                <td class="services__cell">
+                    <h3 class="services__title">Анализирую проблемы сайта:</h3>
+                    <div class="services__wrapper">
+                        <p class="services__li">медленная загрузка</p>
+                        <p class="services__li">ошибки API</p>
+                        <p class="services__li">проблемы в браузере</p>
+                    </div>
+                </td>
+                <td class="services__cell">
+                    <h3 class="services__title">Ускоряю сайт и улучшаю UX:</h3>
+                    <div class="services__wrapper">
+                        <p class="services__li">оптимизация загрузки</p>
+                        <p class="services__li">улучшение адаптивности</p>
+                        <p class="services__li">повышение доступности (Accessibility)</p>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="about">
+        <h2 class="about__head" data-animation="about_head">Обо мне</h2>
+        <div class="about__wrapper">
+            <p class="about__paragraph" data-animation="about_paragraph">Создаю сайты, которые не только выглядят хорошо, но и работают без сбоев.</p>
+            <br>
+            <p class="about__paragraph" data-animation="about_paragraph">
+                Быстро нахожу и устраняю ошибки благодаря пониманию
+                клиент-серверной логики и работы веб-приложений.
+            </p>
+            <br>
+            <p class="about__paragraph" data-animation="about_paragraph">Фокусируюсь на результате: чтобы сайт был быстрым, удобным и надёжным.</p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="projects__head" data-animation="projects_head">Проекты</h2>
+        <dev class="projects__list">
+            
+            <div class="projects__li" data-animation="projects_li">
+                <h3 class="projects__title">Инвестиционный калькулятор</h3>
+                <p class="projects__description">
+                    Веб-приложение для расчёта доходности инвестиций, позволяющее быстро оценить прибыль с учётом различных параметров. 
+                    Реализовал логику вычислений и удобный пользовательский интерфейс.
+                </p>
+                <div class="projects__links">
+                    <a href="#" class="projects__link">Открыть</a>
+                    <a href="#" class="projects__link">GitHub</a>
+                </div>
+            </div>
+            
+            <hr class="projects__line" data-animation="projects_line">
+
+            <div class="projects__li" data-animation="projects_li">
+                <h3 class="projects__title">Аналитическая панель</h3>
+                <p class="projects__description">
+                    Веб-интерфейс для отображения и визуализации данных компаний с получением информации с сервера. 
+                    Настроил взаимодействие frontend и backend и обработку данных.
+                </p>
+                <div class="projects__links">
+                    <a href="#" class="projects__link">Открыть</a>
+                    <a href="#" class="projects__link">GitHub</a>
+                </div>
+            </div>
+
+            <hr class="projects__line" data-animation="projects_line">
+
+            <div class="projects__li" data-animation="projects_li">
+                <h3 class="projects__title">Файловый менеджер</h3>
+                <p class="projects__description">
+                    Интерактивный веб-интерфейс для работы с файлами и папками с навигацией по каталогам и взаимодействием с элементами. 
+                    Реализовал структуру данных и логику поведения интерфейса.
+                </p>
+                <div class="projects__links">
+                    <a href="#" class="projects__link">Открыть</a>
+                    <a href="#" class="projects__link">GitHub</a>
+                </div>
+            </div>
+        </dev>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <h2 class="contacts__head" data-animation="contacts_head">Контакты</h2>
+        
+        <p class="contacts__text" data-animation="contacts_text">
+            Есть задача или нужно доработать сайт?
+            Напишите — обсудим детали.
+        </p>
+
+        <div class="contacts__links">
+            <p class="contacts__li" data-animation="contacts_li">Telegram: <a href="https://t.me/va58d" class="contacts__link" target="_blank">va58d</a></p>
+            <p class="contacts__li" data-animation="contacts_li">Email: <a href="mailto:vechkanovvadik@yandex.ru" class="contacts__link" title="copy">vechkanovvadik@yandex.ru</a></p>
+            <p class="contacts__li" data-animation="contacts_li">GitHub: <a href="https://github.com/V8chn" class="contacts__link" target="_blank">V8chn</a></p>
+        </div>
+    </section>
+</body>
+</html>
