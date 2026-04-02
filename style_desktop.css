@@ -343,12 +343,21 @@
     text-decoration: none;
     color: white;
     font-size: 1.6vw;
-
-    transition: all 0.5s ease;
   }
 
-  .projects__link:hover {
-    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  @media (hover: hover) {
+    .projects__link {
+      transition: all 0.5s ease;
+    }
+    .projects__link:hover {
+      text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    }
+  }
+
+  @media (hover: none) {
+    .projects__link {
+      text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    }
   }
 
   /* --------------------------------------------------------------------------------------------------------------------------- */
@@ -419,11 +428,20 @@
 
   .contacts__link {
     color: white;
-
-    transition: all 0.5s ease;
   }
 
-  .contacts__link:hover {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  @media (hover: hover) {
+    .contacts__link {
+      transition: all 0.5s ease;
+    }
+    .contacts__link:hover {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+  }
+
+  @media (hover: none) {
+    .contacts__link {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
   }
 }
