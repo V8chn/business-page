@@ -1,4 +1,4 @@
-@media (min-aspect-ratio:2/1.5) {
+@media (min-aspect-ratio: 2/3) and (max-aspect-ratio: 2/1.2) {
   @keyframes slideInLeft {
     from {
       opacity: 0;
@@ -46,33 +46,22 @@
     height: 100%;
 
     background:
-      radial-gradient(
-        circle at left center,
-        rgba(255, 255, 255, 0.1),
-        transparent 60%
-      ),
-      #0c0c0c;
-
+      linear-gradient(rgba(12, 12, 12, 0.8)),
+      url('my_photo.png') no-repeat center / contain;
+      background-color: black;
+      
     z-index: -1;
   }
 
   /* --------------------------------------------------------------------------------------------------------------------------- */
 
   .hero {
-    margin-left: 50vw;
-    width: 47vw;
+    width: 70vw;
+    margin: 0 auto;
   }
 
-  .hero__photo {
-    position: fixed;
-    bottom: -10px;
-    left: 6vw;
-  }
-
-  .hero__img {
-    width: 30vw;
-    min-width: 200px;
-    height: auto;
+  .mobile__only {
+    display: none;
   }
 
   .hero__content {
@@ -91,20 +80,20 @@
   }
 
   .hero__name {
-    font-size: 3.5vw;
+    font-size: 4vw;
 
     animation-delay: 0.2s;
   }
 
   .hero__role {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     margin: 4%;
 
     animation-delay: 0.4s;
   }
 
   .hero__offer {
-    font-size: 2vw;
+    font-size: 3vw;
 
     animation-delay: 0.6s;
   }
@@ -124,7 +113,7 @@
     text-decoration: none;
     color: white;
 
-    font-size: 2vw;
+    font-size: 3.5vw;
     padding: 2px;
     border-bottom: solid white 0.01vw;
   }
@@ -144,13 +133,13 @@
       text-shadow: 0 0 20px rgba(255, 255, 255, 1);
     }
   }
-  
+
   /* --------------------------------------------------------------------------------------------------------------------------- */
 
   .services {
-    margin-left: 50vw;
     height: 100vh;
-    width: 47vw;
+    width: 70vw;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -159,7 +148,7 @@
   }
 
   .services__head {
-    font-size: 2.5vw;
+    font-size: 4vw;
     margin-top: 5%;
     margin-bottom: 10%;
 
@@ -201,7 +190,7 @@
   }
 
   .services__title {
-    font-size: 1.5vw;
+    font-size: 2.4vw;
     margin: 4%;
     margin-bottom: 7%;
     text-align: center;
@@ -213,15 +202,15 @@
   }
 
   .services__li {
-    font-size: 1.2vw;
+    font-size: 2.2vw;
   }
 
   /* --------------------------------------------------------------------------------------------------------------------------- */
 
   .about {
-    margin-left: 50vw;
     height: 100vh;
-    width: 47vw;
+    width: 70vw;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -230,7 +219,7 @@
   }
 
   .about__head {
-    font-size: 2.5vw;
+    font-size: 4vw;
     margin-top: 5%;
     margin-bottom: 10%;
 
@@ -251,7 +240,7 @@
 
   .about__paragraph {
     text-align: center;
-    font-size: 1.8vw;
+    font-size: 2.8vw;
 
     opacity: 0;
     transform: translateX(-50px);
@@ -268,9 +257,9 @@
   /* --------------------------------------------------------------------------------------------------------------------------- */
 
   .projects {
-    margin-left: 50vw;
     height: 100vh;
-    width: 47vw;
+    width: 70vw;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -279,7 +268,7 @@
   }
 
   .projects__head {
-    font-size: 2.5vw;
+    font-size: 4vw;
     margin-top: 5%;
     margin-bottom: 10%;
 
@@ -325,38 +314,34 @@
 
   .projects__title {
     margin-bottom: 1%;
-    font-size: 1.7vw;
+    font-size: 2.3vw;
   }
 
   .projects__description {
     margin-bottom: 1%;
-    font-size: 1.3vw;
+    font-size: 1.9vw; 
   }
 
   .projects__links {
     display: flex;
-    gap: 1vw;
+    gap: 1vh;
     justify-content: end;
   }
 
   .projects__link {
     text-decoration: none;
     color: white;
-    font-size: 1.6vw;
+    font-size: 2.3vw;
 
-    transition: all 0.5s ease;
-  }
-
-  .projects__link:hover {
     text-shadow: 0 0 15px rgba(255, 255, 255, 1);
   }
 
   /* --------------------------------------------------------------------------------------------------------------------------- */
 
   .contacts {
-    margin-left: 50vw;
     height: 100vh;
-    width: 47vw;
+    width: 70vw;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -365,7 +350,7 @@
   }
 
   .contacts__head {
-    font-size: 2.5vw;
+    font-size: 4vw;
     margin-top: 5%;
     margin-bottom: 10%;
 
@@ -382,7 +367,7 @@
   }
 
   .contacts__text {
-    font-size: 1.8vw;
+    font-size: 3vw;
     text-align: center;
 
     opacity: 0;
@@ -398,11 +383,12 @@
   }
 
   .contacts__links {
+   
     margin: 10%;
   }
 
   .contacts__li {
-    font-size: 1.8vw;
+    font-size: 2.5vw;
     margin-bottom: 3%;
 
     opacity: 0;
@@ -420,10 +406,6 @@
   .contacts__link {
     color: white;
 
-    transition: all 0.5s ease;
-  }
-
-  .contacts__link:hover {
     text-shadow: 0 0 20px rgba(255, 255, 255, 1);
   }
 }
